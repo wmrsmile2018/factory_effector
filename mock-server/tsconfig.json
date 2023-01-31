@@ -1,0 +1,47 @@
+{
+  "compilerOptions": {
+    "moduleResolution": "node",
+    "esModuleInterop": true,
+    "target": "es2015",
+    "module": "commonjs",
+    "outDir": "./build",
+    "baseUrl": ".",
+    "paths": {
+      "*": [
+        "./node_modules/@types/*",
+        "./node_modules/*"
+      ],
+      "@/*": [
+        "./src/*"
+      ],
+      "@api/*": [
+        "./src/api/*"
+      ],
+      "@server/*": [
+        "./src/server/*"
+      ],
+//      "@emrm-types/*": [
+//        "../types/*"
+//      ],
+//      "@mock-factory/*": [
+//        "../mock-factory/lib/mock-factory/src/*"
+//      ],
+//      "@models/*": [
+//        "../types/generatedTypes/modelsWrapper/*"
+//      ],
+//      "@shared/*": [
+//        "../shared/*"
+//      ]
+    }
+  },
+  "exclude": [
+    "node_modules",
+    "./node_modules",
+    "./node_modules/*",
+    "*/**/test",
+    "**/*.test.*",
+  ],
+  "include": [
+    "src/",
+  ]
+}

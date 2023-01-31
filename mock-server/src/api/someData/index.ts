@@ -1,0 +1,1 @@
+export {SomeDataRouter} from './router';

@@ -1,0 +1,1 @@
+export type ServiceParams <B extends {} | undefined = undefined, P extends {} | undefined = undefined>= {pathParams?: P, reqBody?: B};
